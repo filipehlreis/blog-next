@@ -1,4 +1,4 @@
-import { AppProps } from '../../node_modules/next/app';
+import { AppProps } from 'next/app';
 import { GlobalStyles } from '../styles/global-styles';
 import { theme } from '../styles/theme';
 import { ThemeProvider } from 'styled-components';

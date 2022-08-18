@@ -5,7 +5,7 @@ import Document, {
   Main,
   Head,
   NextScript,
-} from '../../node_modules/next/document';
+} from 'next/document';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
