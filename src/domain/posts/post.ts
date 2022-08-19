@@ -1,5 +1,4 @@
 // https://fast-river-12248.herokuapp.com/api/posts?populate=*
-
 export type PostID = number;
 
 export type PostAuthor = {
@@ -74,5 +73,17 @@ export type PostData = {
     cover: PostCover;
     author: PostAuthor;
     category: PostCategory;
+  };
+};
+
+export type PostApi = {
+  data: PostData;
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
   };
 };
