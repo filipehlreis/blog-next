@@ -2,6 +2,7 @@ import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { MainContainer } from '../../components/MainContainer';
 import { PostCard } from '../../components/PostCard';
+import { getPost } from '../../data/posts/get-post';
 import { PostData } from '../../domain/posts/post';
 import { Container } from './styles';
 
