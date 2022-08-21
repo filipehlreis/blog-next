@@ -6,9 +6,9 @@ export type PostAuthor = {
     id: PostID;
     attributes: {
       name: string;
-      created_at: string;
-      updated_at: string;
-      published_at: string;
+      createdAt: string;
+      updatedAt: string;
+      publishedAt: string;
     };
   };
 };
@@ -18,9 +18,9 @@ export type PostCategory = {
     id: PostID;
     attributes: {
       name: string;
-      created_at: string;
-      updated_at: string;
-      published_at: string;
+      createdAt: string;
+      updatedAt: string;
+      publishedAt: string;
     };
   };
 };
@@ -55,8 +55,8 @@ export type PostCoverImg = {
       };
       previewUrl: null;
       provider: string;
-      created_at: string;
-      updated_at: string;
+      createdAt: string;
+      updatedAt: string;
     };
   };
 };
@@ -67,9 +67,9 @@ export type PostData = {
     title: string;
     content: string;
     slug: string;
-    created_at: string;
-    updated_at: string;
-    published_at: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
     cover: PostCoverImg;
     author: PostAuthor;
     category: PostCategory;
