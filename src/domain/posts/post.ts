@@ -41,17 +41,17 @@ export type PostCoverFormat = {
   };
 };
 
-export type PostCover = {
+export type PostCoverImg = {
   data: {
     id: PostID;
     attributes: PostCoverFormat & {
       alternativeText: string;
       caption: string;
       formats: {
-        thumbnail?: PostCoverFormat;
-        small?: PostCoverFormat;
-        medium?: PostCoverFormat;
-        large?: PostCoverFormat;
+        thumbnail: PostCoverFormat;
+        small: PostCoverFormat;
+        medium: PostCoverFormat;
+        large: PostCoverFormat;
       };
       previewUrl: null;
       provider: string;
@@ -70,7 +70,7 @@ export type PostData = {
     created_at: string;
     updated_at: string;
     published_at: string;
-    cover: PostCover;
+    cover: PostCoverImg;
     author: PostAuthor;
     category: PostCategory;
   };

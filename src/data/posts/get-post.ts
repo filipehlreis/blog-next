@@ -5,7 +5,7 @@ import { markdownToHtml } from '../../utils/markdown-to-html';
 
 export const getPost = async (slug: string | string[]): Promise<PostData[]> => {
   const slugsString = Array.isArray(slug) ? slug[0] : slug;
-  const url = `${POST_URL}filters[slug][$in]=${slugsString}`;
+  const url = `${POST_URL}filters[slug][$in]=${slugsString}&populate=*`;
   const jsonPosts = await fetchJson<PostData[]>(url);
   const content = await markdownToHtml(jsonPosts['data'][0].attributes.content);
   jsonPosts['data'][0].attributes.content = content;
