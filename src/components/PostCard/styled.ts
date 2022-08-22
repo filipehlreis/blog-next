@@ -13,6 +13,7 @@ export const PostCardCover = styled.div`
 
   img {
     width: 100%;
+    border-radius: 5%;
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
