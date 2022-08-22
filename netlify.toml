@@ -4,5 +4,5 @@
   publish   = "out_publish"
 
 
-[plugins]
+[[plugins]]
   package   = "@netlify/plugin-nextjs"
