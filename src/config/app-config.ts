@@ -3,4 +3,4 @@ export const POSTS_URL = `${API_URL}/posts?populate=*`;
 export const POST_URL = `${API_URL}/posts?`;
 
 export const SITE_NAME = 'Filipe Reis';
-export const SITE_URL = '';
+export const SITE_URL = process.env.SITE_URL || 'http://localhost:3000';
