@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "disqus-react": "^1.1.3",
+    "find-cache-dir": "^3.3.2",
     "next": "12.2.5",
     "next-on-netlify": "^3.0.1",
     "react": "18.2.0",
