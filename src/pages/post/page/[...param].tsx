@@ -29,7 +29,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const page = Number(ctx.params.param[0]);
+  const page =
+    Number(ctx.params.param[0]) < 1 ? 1 : Number(ctx.params.param[0]);
   const category = ctx.params.param[1] || '';
 
   const postsPerPage = 6;
