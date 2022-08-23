@@ -18,7 +18,7 @@ export default function Page({ posts, category, pagination }: PageProps) {
   if (router.isFallback) return <div>Carregando ...</div>;
   if (!posts.length) return <div>Página não encontrada ...</div>;
 
-  return <HomePage posts={posts} />;
+  return <HomePage posts={posts} category={category} pagination={pagination} />;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
