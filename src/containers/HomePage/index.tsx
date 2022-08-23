@@ -16,7 +16,9 @@ export default function HomePage({ posts, category }: HomePageProps) {
   return (
     <>
       <Head>
-        <title>{SITE_NAME}</title>
+        <title>
+          {category ? `${category} - ${SITE_NAME}` : `${SITE_NAME}`}
+        </title>
         <meta name="description" content="Este é um blog sobre tudo na vida." />
       </Head>
       <Header />
