@@ -20,12 +20,12 @@ export const Post = ({ post }: PostProps) => {
   let coverUrl = object.small.url;
   if (object.large) coverUrl = object.large.url;
 
+  const titlePost = `${post.attributes.title} - ${SITE_NAME}`;
+
   return (
     <>
       <Head>
-        <title>
-          {post.attributes.title} - {SITE_NAME}
-        </title>
+        <title>{titlePost}</title>
         <meta
           name="description"
           content={removeHtml(post.attributes.content).slice(0, 150)}
