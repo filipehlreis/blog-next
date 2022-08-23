@@ -12,3 +12,8 @@ export const Category = styled.div`
   font-weight: bold;
   padding: ${({ theme }) => theme.spacings.medium} 0;
 `;
+export const AllPostLinks = styled.a`
+  display: block;
+  text-align: center;
+  margin: ${({ theme }) => theme.spacings.large} 0;
+`;
